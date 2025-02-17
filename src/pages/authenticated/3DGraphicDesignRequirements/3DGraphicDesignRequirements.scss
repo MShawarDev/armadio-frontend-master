@@ -1,0 +1,105 @@
+.requirements-page {
+    display: flex;
+    flex-direction: row;
+    // background-size: cover;
+    // background-position: center;
+    padding: 5rem;
+    // height: 100vh;
+    // background: transparent url('../../../assest/register/Base.png') 0% 0% no-repeat padding-box;
+    // opacity: 0.15;
+    background-color: black;
+}
+
+.left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.play-icon {
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+}
+
+.right-column {
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.requirements_title {
+    text-align: left;
+    font: normal normal medium 28px/40px Lexend Deca;
+    letter-spacing: 0.14px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.requirements-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    margin-bottom: 8rem;
+}
+
+.requirements-list li {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-style: normal;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+   
+
+}
+
+.custom-checkbox input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
+}
+
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+    text-align: left;
+    letter-spacing: 0px;
+    color: #FFFFFF !important;
+    opacity: 0.9;
+    margin: 0 10px;
+}
+
+.custom-checkbox input[type="checkbox"]:focus {
+    outline: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked {
+    background-color: transparent;
+}
+
+.custom-checkbox label {
+    color: #fff !important;
+}
+
+.download-button {
+    background-color: #2A2A2A !important;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    opacity: 1;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    color: #565656 !important;
+}

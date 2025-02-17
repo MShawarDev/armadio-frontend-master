@@ -1,0 +1,68 @@
+@import "../../scss/colors";
+
+.lazyLoading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(129, 128, 128, 0.1);
+    z-index: 9999;
+
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid $base-color;
+        border-top: 4px solid transparent;
+        border-radius: 50%;
+        animation: rotate 1s linear infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+
+    .label-loading {
+        font-size: 1rem;
+        animation:
+            fade-out 0.8s ease-in-out infinite alternate,
+            blink 1s linear infinite;
+
+
+
+        @keyframes fade-out {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    }
+}

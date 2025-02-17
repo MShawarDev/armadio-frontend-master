@@ -1,0 +1,92 @@
+.hire-people-page {
+    background-color: black;
+    color: white;
+    padding: 5rem;
+    height: 100vh;
+    padding-bottom: 8rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hire-people-title {
+    font-size: 24px;
+    font-weight: bold;
+    width: 25%;
+    text-align: left;
+    font: normal normal medium 28px/40px Lexend Deca;
+    letter-spacing: 0.14px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.hire-people-join-button {
+    background-color: #B20000 !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #FFFFFF57;
+    border-radius: 4px;
+    opacity: 1;
+    backdrop-filter: blur(50px) !important;
+    -webkit-backdrop-filter: blur(50px) !important;
+}
+
+.tabs-container {
+    margin-top: 20px;
+}
+
+.tab {
+    background: transparent !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    border: 1px solid #FFFFFF57 !important;
+    border-radius: 22px !important;
+    opacity: 0.5 !important;
+    backdrop-filter: blur(30px) !important;
+    -webkit-backdrop-filter: blur(30px) !important;
+    color: #fff !important;
+    margin-right: 1rem !important;
+}
+
+.person-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2rem 0;
+
+}
+
+.person-item {
+    position: relative;
+    width: calc(20% - 10px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.person-item img {
+    width: 100%;
+    height: 316px;
+    display: block;
+}
+
+.person-item .person-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.person-item:hover .person-info {
+    opacity: 1;
+}

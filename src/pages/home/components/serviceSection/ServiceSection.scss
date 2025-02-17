@@ -1,0 +1,42 @@
+.service-section {
+    display: flex;
+    flex-direction: column;
+    background: url('../../../../assest//home/video-cover.png') no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.service-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem
+}
+
+.service-section-title {
+    text-align: center;
+    font: normal normal 40px/52px Lexend Deca;
+    letter-spacing: 0.2px;
+    color: #fff;
+    opacity: 1;
+
+}
+
+.service-item {
+    border-right: 1px solid #fff;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.last-service-item {
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}

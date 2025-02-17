@@ -1,0 +1,121 @@
+@import '../src/scss/colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+:root {
+  --safe-area-top: unset;
+  --safe-area-bottom: unset;
+  --safe-area-left: unset;
+  --safe-area-right: unset;
+  height: 100%;
+  background-color: #DDDDDD;
+
+}
+
+#root {
+  height: 100%;
+}
+// Override react-toastify
+.Toastify__toast-theme--colored-shared {
+  background-color: #fff !important;
+  border-radius: 12px !important;
+  color: #000000 !important;
+  font-family: "URWGeometricLight" !important;
+  font-weight: 700 !important;
+  height: auto;
+  --toastify-toast-width: 160px;
+  --toastify-toast-min-height: 90px;
+  --toastify-toast-max-height: 130px;
+}
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  @extend .Toastify__toast-theme--colored-shared;
+  border-left: 10px solid #d1ccbd;
+  border: 1px solid #d1ccbd;
+  .Toastify__toast-body {
+    color: #d1ccbd;
+  }
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  @extend .Toastify__toast-theme--colored-shared;
+  border-left: 10px solid #52bf7e;
+  border: 1px solid #52bf7e;
+
+  .Toastify__toast-body {
+    color: #52bf7e;
+  }
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+  @extend .Toastify__toast-theme--colored-shared;
+  border-left: 10px solid #B20000;
+  border: 1px solid #B20000;
+  .Toastify__toast-body {
+    color: #B20000;
+  }
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  @extend .Toastify__toast-theme--colored-shared;
+  border-left: 10px solid #B20000 !important;
+  border: 1px solid #B20000 !important;
+  .Toastify__toast-body {
+    color: #B20000;
+  }
+}
+.Toastify__close-button > svg {
+  color: #000000 !important;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0 !important;
+  height: 100%;
+}
+
+* {
+  font-family: 'Lexend Deca' !important;
+
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+  height: 12px;
+
+
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* color of the tracking area */
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $base-white;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #f1f1f1;
+  /* creates padding around scroll thumb */
+}
