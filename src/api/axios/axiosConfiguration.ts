@@ -2,10 +2,11 @@ import Axios from 'axios';
 import { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { AppConfig } from '../../config/appConfig';
 import { reduxStore } from '../../redux/store';
+import { env } from 'node:process';
 
 const axiosConfiguration = () => {
   const axiosConfig = {
-    baseURL: "https://localhost:7181/api/",
+    baseURL: process.env.REACT_APP_API_ROOT_REST_API,
   };
 
   const axios = Axios.create(axiosConfig);
@@ -14,8 +15,8 @@ const axiosConfiguration = () => {
     request: AxiosRequestConfig,
   ): Promise<AxiosRequestConfig> => {
     if (!axios.defaults.baseURL) {
-      axios.defaults.baseURL = "https://localhost:7181/api/";
-      request.baseURL = "https://localhost:7181/api/";
+      axios.defaults.baseURL = process.env.REACT_APP_API_ROOT_REST_API;
+      request.baseURL = process.env.REACT_APP_API_ROOT_REST_API;
     }
 
     const accessToken = reduxStore.getState().Auth.accessToken;
