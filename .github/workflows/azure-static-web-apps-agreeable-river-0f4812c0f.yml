@@ -34,8 +34,8 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Install dependencies
         run: npm install --force
-      - name: Install dependencies
-        run: npm install --force
+      - name: Build
+        run: npm run build
         
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
